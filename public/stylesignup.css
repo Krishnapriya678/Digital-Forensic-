@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.back{
+    
+        width:100%;
+        height:109vh;
+        background-image: url('back.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position:relative;
+}
+.user{
+    display: inline-block;
+    margin-left: 250px;
+    margin-top: 200px;
+}
+.user p{
+    color:black;
+    font-size: 30px;
+}
+.insti{
+    display: inline-block;
+    margin-left: 300px;
+}
+.insti  p{
+    color:black;
+    font-size: 30px;
+}
+.user button{
+    font-size: 18px;
+    font-weight: bold;
+    margin:20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5px;
+    border:0;
+}
+.insti button{
+    font-size: 18px;
+    font-weight: bold;
+    margin:20px 0;
+    padding: 10px 15px;
+    width: 70%;
+    border-radius: 5px;
+    border:0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="stylelogin.css"  rel="stylesheet"type="text/css"/>
+</head>
+<body>
+    <div class="back">
+    <div  class="login-form">
+    <h1>LOGIN</h1>
+    <form name="forms" method="post" action="/register">
+      
+        <p>UserName:</p>    
+        <input type="text" id="orgname"placeholder="UserName">
+        
+        <script>
+            function Username(){
+                let txt=document.getElementById("name");
+                var l= txt.value.length;
+                if(l<5){
+                    document.getElementById("demo").innerHTML="**username must be 5 characters or more";
+                }else{
+                    document.getElementById("demo").innerHTML="";
+                }
+            }
+            document.getElementById("name").addEventListener('blur',Username)
+        </script>
+        
+        <p>Password:</p>
+        <input type="password"id="orgpass"placeholder="Password">
+        
+        <p><button type="submit">Login</button></p>
+    
+    </form>
+</div>
+</div>
+</body>
+</html>
